@@ -24,18 +24,8 @@ body{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-}
-
-.header::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     background: rgba(0,0,0,.1);
     backdrop-filter: blur(50px);
-    z-index: -1;
 }
 
 .logo{
@@ -51,6 +41,11 @@ body{
     text-decoration: none;
     font-weight: 500;
     margin-left: 2.5rem;
+    transition: all .5s ease;
+}
+
+.navbar a:hover{
+    color: rgb(40, 223, 255);
 }
 
 #check{
@@ -111,7 +106,7 @@ body{
         font-size: 1.1rem;
         margin: 1.5rem 0;
         text-align: center;
-        transform: translateY(-50px);
+        transform: translateY(-100px);
         transition: 0.3 ease;
     }
 
